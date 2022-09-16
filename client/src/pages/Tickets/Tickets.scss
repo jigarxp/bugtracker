@@ -1,0 +1,26 @@
+.tickets {
+  background-color: #f8fafc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+
+  h1 {
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    font-size: 4rem;
+    letter-spacing: 1.5px;
+    color: #16213e;
+    border-bottom: 5px solid transparent;
+    border-image: linear-gradient(45deg, #0fd7c6 12%, #125688 100%);
+    border-image-slice: 1;
+    margin-bottom: 3rem;
+    padding-bottom: 1rem;
+    width: 25%;
+  }
+  main {
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,27 @@
+.user-chart {
+  background-color: white;
+  box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  grid-column: span 2;
+  width: 30%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h3 {
+    text-align: center;
+    margin-top: 2rem;
+    color: #16213e;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+  }
+
+  p {
+    padding: 2rem 0;
+    font-size: 3rem;
+    color: #16213e;
+    font-family: 'Roboto';
+  }
+}

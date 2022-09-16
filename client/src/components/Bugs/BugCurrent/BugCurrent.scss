@@ -1,0 +1,121 @@
+.show_current_bug {
+  transform: translateY(0) !important;
+}
+
+.arrow-down {
+  opacity: 0.8;
+  color: #16213e;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 1;
+  }
+}
+
+.bug-current {
+  position: fixed;
+  bottom: 7.5rem;
+  z-index: 99;
+  transition: all 1s ease;
+  transform: translateY(200%);
+  background-color: white;
+  box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.1);
+  width: 1250px;
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #f1f5f8;
+
+    h2 {
+      margin-left: 6.5rem;
+      font-size: 2rem;
+      font-family: 'Barlow Condensed', sans-serif;
+      color: #16213e;
+    }
+  }
+
+  .button-container {
+    display: flex;
+    align-items: center;
+    gap: 5.25rem;
+
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      width: 8rem;
+      height: 3rem;
+      background: linear-gradient(45deg, #125688 12%, #0fd7c6 100%);
+      border: none;
+      color: white;
+      border-radius: 5px;
+      transition: all 0.2s;
+      opacity: 0.8;
+      box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.1);
+      font-size: 1rem;
+
+      &:hover {
+        cursor: pointer;
+        opacity: 1;
+        box-shadow: 0 0.5em 0.5em -0.4em #125688;
+        transform: translateY(-0.25em);
+      }
+
+      &:active {
+        transform: scale(0.98);
+        box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.1);
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .info-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    text-align: center;
+    padding-bottom: 2rem;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+
+      p {
+        font-family: 'Bebas Neue', cursive;
+        color: #125688;
+        font-size: 15px;
+
+        &:nth-of-type(2n) {
+          font-size: 1rem;
+          font-family: 'Roboto', sans-serif;
+          color: #595f6e;
+        }
+
+        span {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  .priorityBG,
+  .statusBG {
+    height: 1.5rem;
+    width: 5rem;
+    font-size: 14px;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    color: white;
+  }
+}
